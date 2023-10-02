@@ -39,22 +39,29 @@ export default function Project({
       className="group mb-3 sm:mb-8 last:mb-0 "
     >
       {showMore ? (
-        <div
+        <motion.div
+        initial={{
+          opacity:0,
+        }}
+        animate={{
+          opacity:1,
+        }}
+        transition={{
+          duration:.5
+        }}
           id="swiper"
           className="hidden z-[1001] overflow-hidden absolute sm:flex flex-col left-0 w-[100%] h-[100vh] items-center justify-center  bg-black/70 backdrop-blur-[0.5rem] transition-all dark:text-gray-950"
         >
-          <br />
-          <br />
-      <h3 className='text-white text-sl sm:text-2xl font-semibold'>Slide to see more images 👋</h3>
+      <span className='text-white text-2xl font-semibold'>Slide to see more images 👋</span>
 
           <SwiperProjects images={images} />
           <button
-            className=" absolute right-200 font-semibold bottom-10 hover:scale-110 active:scale-105 transition-all bg-white w-[5rem] border border-black rounded-full text-xl bg-opacity-80"
+            className=" fixed right-100 font-semibold top-10 hover:scale-110 active:scale-105 transition-all bg-white w-[5rem] border border-black rounded-full text-xl bg-opacity-80"
             onClick={toggleShowMore}
           >
             Close
           </button>
-        </div>
+        </motion.div>
       ) : null}
 
       <section className=" relative rounded-lg bg-gray-100 max-w-[42rem] borderBlack overflow-hidden sm:pr-8 sm:h-[20rem] hover:bg-gray-200 sm:group-even:pl-8 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20">

@@ -59,12 +59,11 @@ export const experiencesData = [
     date: "AUG. 2023 | SEPT. 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Coming soon...",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'll keep getting experience by working as a freelancer and making personal projects.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "SEPT. 2023 | Forever",
   },
 ] as const;
 
@@ -87,7 +86,7 @@ export const projectsData: Project[] = [
     images: ["asd"]
   },
   {
-    title: "Word Analytics",
+    title: "Coming soon...",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
