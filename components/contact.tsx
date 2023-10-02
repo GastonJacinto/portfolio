@@ -39,12 +39,12 @@ export default function Contact() {
       </p>
       <form
         action={async (formData) => {
-        const {data,error} =  await sendEmail(formData);
-        if(error){
-          toast.error(error)
-          return;
-        }
-        toast.success('Email sent successfully!')
+          const { data, error } = await sendEmail(formData);
+          if (error) {
+            toast.error(error);
+            return;
+          }
+          toast.success('Email sent successfully!');
         }}
         className="mt-10 flex flex-col dark:text-black"
       >
@@ -63,7 +63,7 @@ export default function Contact() {
           required
           maxLength={5000}
         />
-        <SubmitButton/>
+        <SubmitButton />
       </form>
     </motion.section>
   );

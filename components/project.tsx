@@ -64,7 +64,7 @@ export default function Project({
         </motion.div>
       ) : null}
 
-      <section className=" relative rounded-lg bg-gray-100 max-w-[42rem] borderBlack overflow-hidden sm:pr-8 sm:h-[20rem] hover:bg-gray-200 sm:group-even:pl-8 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+      <section className="relative rounded-lg bg-gray-100 max-w-[42rem] borderBlack overflow-hidden sm:pr-8 sm:h-[20rem] hover:bg-gray-200 sm:group-even:pl-8 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] ">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
@@ -85,16 +85,16 @@ export default function Project({
         <Image
           src={imageUrl}
           alt={title}
-          className="absolute hidden sm:block  top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:-rigth-[initial] group-even:-left-40 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 
+          className="absolute hidden sm:block  top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:-right-[initial] group-even:-left-40 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 
           group-hover:scale-[1.04]
           group-even:group-hover:translate-x-3
           group-even:group-hover:translate-y-3
           group-even:group-hover:rotate-2
           transition"
         />
-        <button className="absolute right-5 bottom-2 sm:flex  hidden items-center justify-center bg-white/70 rounded-full w-[6rem] hover:scale-110 active:scale-105 transition-all font-semibold dark:bg-black/[0.3] dark:text-white/8 dark:border-white border border-black" onClick={toggleShowMore}>
+        {images.length?<button className="absolute right-5 group-even:right-[initial] group-even:left-5 bottom-2 sm:block  hidden items-center justify-center bg-white/70 rounded-full w-[6rem] hover:scale-110 active:scale-105 transition-all font-semibold dark:bg-black/[0.3] dark:text-white/8 dark:border-white border border-black" onClick={toggleShowMore}>
           <Link href={`#swiper`}>See more</Link>
-        </button>
+        </button>:null}
       </section>
     </motion.div>
   );
