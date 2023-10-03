@@ -88,7 +88,7 @@ export const projectsData: Project[] = [
   {
     title: "Coming soon...",
     description:
-      "I'm so excited to have an opportunity to show my talent, I'll keep working to get it, so you'll be seeing new projects here soon :).",
+      "I'm so excited to have an opportunity to show my talent, and I'll keep working to get it, so you'll be seeing new projects here soon :).",
     tags: ["I","will", "never", "stop", "learning", "and","coding"],
     imageUrl: PROG,
     images: []

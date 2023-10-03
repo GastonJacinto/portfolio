@@ -19,14 +19,12 @@ export default function About() {
 <SectionHeading>About me</SectionHeading>
     
       <p className='mb-3'>
-      In the middle of the  {" "}
-        <span className="font-medium">Accountant career</span>, I decided to pursue my
-        passion for programming. I enrolled in Henry bootcamp and learned{" "}
+      In the midst of my   {" "}
+        <span className="font-medium">accountant career</span>,  I made the decision to pursue my passion for programming. I enrolled in Henry's bootcamp and learned{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem, and even more if that problem demands to me a lot of time. I am always looking to
-        learn new technologies, and currently learning Next.js13 and TypeScript. I am looking for a{" "}
+        feeling of finally figuring out a solution to a problem, especially if it takes a lot of time. I am always eager to learn new technologies and am currently diving into Next.js 13 and TypeScript. I am actively seeking a{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.
       </p>
