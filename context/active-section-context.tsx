@@ -1,13 +1,13 @@
 'use client';
 import React, { useState, useContext } from 'react';
-import { SectionName } from '@/lib/types';
+import { SectionName,SectionNameEsp } from '@/lib/types';
 type ActiveSectionContextProviderProps = {
   children: React.ReactNode;
 };
 
 type ActiveSectionContextType = {
-  activeSection: SectionName;
-  setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
+  activeSection: SectionName | SectionNameEsp;
+  setActiveSection: React.Dispatch<React.SetStateAction<SectionName | SectionNameEsp>>;
   timeOfLastClick: number;
   setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
 };
@@ -18,7 +18,7 @@ export default function ActiveSectionContextProvider({
   children,
 }: ActiveSectionContextProviderProps) {
 
-  const [activeSection, setActiveSection] = useState<SectionName>('Home');
+  const [activeSection, setActiveSection] = useState<SectionName | SectionNameEsp>('Home');
   const [timeOfLastClick, setTimeOfLastClick] = useState(0);
   //* Necesito saber si el usuario clickeó un link para deshabilitar el IsInView cuando el usuario clickea un link del header para ir a una sección directamente.
 

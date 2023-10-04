@@ -1,48 +1,58 @@
-"use client";
+'use client';
 
-import React, { useContext } from 'react';
+import React from 'react';
 import SectionHeading from './section-heading';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { experiencesData } from '@/lib/data';
+import { experiencesData, experiencesDataEsp } from '@/lib/data';
 import { useSectionInView } from '@/lib/hooks';
-import ThemeContextProvider, { useTheme } from '@/context/theme-context';
+import { useTheme } from '@/context/theme-context';
+import { useLanguage } from '@/context/language-context';
 export default function Experience() {
-  const {ref} = useSectionInView("Experience")
+  const { language, toggleLanguage } = useLanguage();
+  const sectionName = language === 'ENG' ? 'Experience' : 'Experiencia';
+  const { ref } = useSectionInView(sectionName);
 
-  const {theme} = useTheme();
+  const { theme } = useTheme();
 
+  const experience = language === 'ENG' ? experiencesData : experiencesDataEsp;
   return (
-    <section ref={ref} id="experience" className='scroll-mt-28 mb-28 sm:mb-40'>
-      <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline 
-      animate={true}
-      lineColor=''
-      >
-        {experiencesData.map((item, index) => (
+    <section ref={ref} id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
+      <SectionHeading>{language === 'ENG' ? "My experience" : "Mi experiencia"}</SectionHeading>
+      <VerticalTimeline animate={true} lineColor="">
+        {experience.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
-            visible={ true } 
-            contentStyle={{
-              background:theme ==='light'?"#f3f4f6":"rgba(255,255,255,0.05)",
-              boxShadow:"none",
-              border:"1px solid rgba(0,0,0,0.05)",
-              textAlign:'left',
-              padding:"1.3rem 2rem"
-            }}
-            contentArrowStyle={{
-              borderRight:theme==='light'?'0.4rem solid #9ca3af ':"0.4rem solid rgba(255,255,255,0.5",
-            }}
-            date={item.date}
-            icon={item.icon}
-            iconStyle={{
-              background:theme==='light'?"white":'rgba(230,230,230)',
-              fontSize:"1.5rem",
-              color:"black",
-            }}
+              visible={true}
+              contentStyle={{
+                background:
+                  theme === 'light' ? '#f3f4f6' : 'rgba(255,255,255,0.05)',
+                boxShadow: 'none',
+                border: '1px solid rgba(0,0,0,0.05)',
+                textAlign: 'left',
+                padding: '1.3rem 2rem',
+              }}
+              contentArrowStyle={{
+                borderRight:
+                  theme === 'light'
+                    ? '0.4rem solid #9ca3af '
+                    : '0.4rem solid rgba(255,255,255,0.5',
+              }}
+              date={item.date}
+              icon={item.icon}
+              iconStyle={{
+                background: theme === 'light' ? 'white' : 'rgba(230,230,230)',
+                fontSize: '1.5rem',
+                color: 'black',
+              }}
             >
-            <h3 className='font-semibold capitalize'>{item.title}</h3>
-            <p className='!mt-1 !font-normal text-gray-700 dark:text-white/75'>{item.description}</p>
+              <h3 className="font-semibold capitalize">{item.title}</h3>
+              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+                {item.description}
+              </p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

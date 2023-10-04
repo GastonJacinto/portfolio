@@ -12,3 +12,7 @@ html.dark{
 .borderBlack{
   @apply  border border-black/10;
 }
+
+.contactMe {
+  @apply opacity-70 group-hover:translate-x-1 transition
+}

@@ -7,6 +7,7 @@ import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import SwiperProjects from './swiper-projects';
 import Link from 'next/link';
+import { useLanguage } from '@/context/language-context';
 type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({
@@ -16,6 +17,8 @@ export default function Project({
   imageUrl,
   images,
 }: ProjectProps) {
+  const {language, toggleLanguage} = useLanguage()
+  const sectionName = language==="ENG"?"Projects": "Proyectos"
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -28,7 +31,6 @@ export default function Project({
   };
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
-  const middle = Math.round(projectsData.length / 2);
   return (
     <motion.div
       style={{
@@ -40,26 +42,28 @@ export default function Project({
     >
       {showMore ? (
         <motion.div
-        initial={{
-          opacity:0,
-        }}
-        animate={{
-          opacity:1,
-        }}
-        transition={{
-          duration:.5
-        }}
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.5,
+          }}
           id="swiper"
-          className="hidden z-[1001] overflow-hidden absolute sm:flex flex-col left-0 w-[100%] h-[100vh] items-center justify-center  bg-black/70 backdrop-blur-[0.5rem] transition-all dark:text-gray-950"
+          className="hidden z-[1001] overflow-hidden absolute md:flex flex-col left-0 w-[100%] h-[100vh] items-center justify-center  bg-black/70 backdrop-blur-[0.5rem] transition-all dark:text-gray-950"
         >
-      <span className='text-white text-2xl font-semibold'>Slide to see more images 👋</span>
+          <span className="text-white text-2xl font-semibold hidden lg:block ">
+            {language==="ENG"?"Slide to see more images 👋":"Desliza para ver más imagenes 👋"}
+          </span>
 
           <SwiperProjects images={images} />
           <button
-            className=" fixed right-100 font-semibold top-10 hover:scale-110 active:scale-105 transition-all bg-white w-[5rem] border border-black rounded-full text-xl bg-opacity-80"
+            className="fixed right-100 font-semibold top-10 hover:scale-110 active:scale-105 transition-all bg-white w-[5rem] border border-black rounded-full text-xl bg-opacity-80"
             onClick={toggleShowMore}
           >
-            Close
+            {language==="ENG"?"Close":"Cerrar"}
           </button>
         </motion.div>
       ) : null}
@@ -92,9 +96,15 @@ export default function Project({
           group-even:group-hover:rotate-2
           transition"
         />
-        {images.length?<button className="absolute right-5 group-even:right-[initial] group-even:left-5 bottom-2 sm:block  hidden items-center justify-center bg-white/70 rounded-full w-[6rem] hover:scale-110 active:scale-105 transition-all font-semibold dark:bg-black/[0.3] dark:text-white/8 dark:border-white border border-black" onClick={toggleShowMore}>
-          <Link href={`#swiper`}>See more</Link>
-        </button>:null}
+        {images.length ? (
+          <button
+            className="absolute right-5 group-even:right-[initial] group-even:left-5 bottom-2 md:block  hidden items-center justify-center bg-white/70 rounded-full w-[6rem] hover:scale-110 active:scale-105 transition-all font-semibold dark:bg-black/[0.3] dark:text-white/8 dark:border-white border border-black"
+            onClick={toggleShowMore}
+          >
+            <Link href={`#swiper`}>{language==="ENG"?"See more":"Ver más"}
+</Link>
+          </button>
+        ) : null}
       </section>
     </motion.div>
   );
