@@ -1,5 +1,4 @@
 'use client';
-
 import React from 'react';
 import SectionHeading from './section-heading';
 import {
@@ -21,7 +20,9 @@ export default function Experience() {
   const experience = language === 'ENG' ? experiencesData : experiencesDataEsp;
   return (
     <section ref={ref} id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>{language === 'ENG' ? "My experience" : "Mi experiencia"}</SectionHeading>
+      <SectionHeading>
+        {language === 'ENG' ? 'My experience' : 'Mi experiencia'}
+      </SectionHeading>
       <VerticalTimeline animate={true} lineColor="">
         {experience.map((item, index) => (
           <React.Fragment key={index}>

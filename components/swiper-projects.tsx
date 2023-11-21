@@ -7,9 +7,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import "./swiper.css"
+import './swiper.css';
 import { Pagination } from 'swiper/modules';
-import Image from 'next/image';
 
 type SwiperImage = {
   images: string[];
@@ -22,7 +21,7 @@ export default function SwiperProjects({ images }: SwiperImage) {
     };
   }, []);
   return (
-    <div  className="flex flex-col items-center justify-center  w-[80%] h-[100%] ">
+    <div className="flex flex-col items-center justify-center  w-[80%] h-[100%] ">
       <Swiper
         pagination={{
           dynamicBullets: true,
@@ -33,10 +32,7 @@ export default function SwiperProjects({ images }: SwiperImage) {
         {images.map((image, index) => (
           <React.Fragment key={index}>
             <SwiperSlide>
-              <img
-                src={image}
-                alt="Project image"
-              />
+              <img src={image} alt="Project image" />
             </SwiperSlide>
           </React.Fragment>
         ))}

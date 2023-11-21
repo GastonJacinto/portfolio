@@ -30,7 +30,7 @@ export default function Contact() {
       viewport={{
         once: true,
       }}
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center "
+      className="mb-20 sm:mb-28 scroll-mt-28 w-[min(100%,38rem)] text-center "
     >
       <SectionHeading>
         {language === 'ENG' ? 'Contact me' : 'Contáctame'}
