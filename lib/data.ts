@@ -258,16 +258,23 @@ export const experiencesData = [
   {
     title: 'Full Stack Developer (intern)',
     description:
-      'I worked as a full stack developer for 1 month to develop a SPA for Club ADIP, which is located in Buenos Aires.',
+      'I am working as a full stack developer for 1 month to develop a SPA for Club ADIP, which is located in Buenos Aires.',
     icon: React.createElement(CgWorkAlt),
     date: 'AUG. 2023 | SEPT. 2023',
+  },
+  {
+    title: 'Full Stack Developer',
+    description:
+      'I am working as a Fullstack developer to develop a SPA for Olimpo Training, in Mendoza.',
+    icon: React.createElement(CgWorkAlt),
+    date: 'DEC. 2023 | NOW',
   },
   {
     title: 'Coming soon...',
     description:
       "I'll keep getting experience by working as a freelancer and making personal projects.",
     icon: React.createElement(FaReact),
-    date: 'SEPT. 2023 | Forever',
+    date: 'Forever',
   },
 ] as const;
 
@@ -287,10 +294,17 @@ export const experiencesDataEsp = [
     date: 'AGO. 2023 | SEPT. 2023',
   },
   {
+    title: 'Desarrollador Full Stack',
+    description:
+      'Estoy trabajando como desarrollador Fullstack para desarrollar una SPA para Olimpo Training, en Mendoza.',
+    icon: React.createElement(CgWorkAlt),
+    date: 'DIC. 2023 | ACTUALIDAD',
+  },
+  {
     title: 'Muy pronto...',
     description:
       'Seguiré obteniendo experiencia trabajando como freelancer y en proyectos personales.',
     icon: React.createElement(FaReact),
-    date: 'SEPT. 2023 | Indefinido',
+    date: 'Indefinido',
   },
 ] as const;
