@@ -9,13 +9,13 @@ export default function Footer() {
       {language === 'ENG' ? (
         <>
           <small className="mb-2 block text-xs">
-            &copy; 2023 Gastón Jacinto. All rigths reserved.
+            &copy; 2024 Gastón Jacinto. All rigths reserved.
           </small>
         </>
       ) : (
         <>
           <small className="mb-2 block text-xs">
-            &copy; 2023 Gastón Jacinto. Todos los derechos reservados.
+            &copy; 2024 Gastón Jacinto. Todos los derechos reservados.
           </small>
         </>
       )}
