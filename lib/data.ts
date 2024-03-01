@@ -265,7 +265,14 @@ export const experiencesData = [
   {
     title: 'Full Stack Developer',
     description:
-      'I am working as a Fullstack developer to develop a SPA for Olimpo Training, in Mendoza.',
+      'I worked as a Fullstack developer to develop a SPA for Olimpo Training, in Mendoza.',
+    icon: React.createElement(CgWorkAlt),
+    date: 'DEC. 2023 | FEB. 2024',
+  },
+  {
+    title: 'Prompt & Responses Reviewer | Remotasks (Remote)',
+    description:
+      'I am working as a reviewer at Remotasks, rating two responses of an AI model to a prompt (related to programming), to determine which is the most appropriate according to certain parameters.',
     icon: React.createElement(CgWorkAlt),
     date: 'DEC. 2023 | NOW',
   },
@@ -296,7 +303,14 @@ export const experiencesDataEsp = [
   {
     title: 'Desarrollador Full Stack',
     description:
-      'Estoy trabajando como desarrollador Fullstack para desarrollar una SPA para Olimpo Training, en Mendoza.',
+      'Trabajé como desarrollador Fullstack para desarrollar una SPA para Olimpo Training, en Mendoza.',
+    icon: React.createElement(CgWorkAlt),
+    date: 'DIC. 2023 | FEB. 2024',
+  },
+  {
+    title: 'Prompt & Responses Reviewer | Remotasks (Remoto)',
+    description:
+      'Estoy trabajando como reviewer en Remotasks, calificando dos respuestas de un modelo de IA a un prompt, para determinar cual es la más adecuada de acuerdo a ciertos parámetros.',
     icon: React.createElement(CgWorkAlt),
     date: 'DIC. 2023 | ACTUALIDAD',
   },
