@@ -185,7 +185,7 @@ export const projectsDataEsp: Project[] = [
   {
     title: 'Olimpo Training',
     description:
-      'Desarrollé una aplicación integral para un gimnasio, permitiendo a usuarios recargar créditos con MercadoPago, reservar/quitar clases, editar perfiles y a administradores gestionar clases, planes, instructores y créditos de usuarios.',
+      'Desarrollé una aplicación integral para un gimnasio, permitiendo a usuarios recargar créditos con MercadoPago, reservar/quitar clases, editar perfiles y a administradores gestionar clases, planes, instructores también pueden administrar usuarios y sus créditos. La aplicación es completamente responsive y funcional.',
     tags: [
       'Next.js',
       'Nest.js',
@@ -214,7 +214,7 @@ export const projectsDataEsp: Project[] = [
   {
     title: 'Club ADIP',
     description:
-      'Trabajé como desarrollador full stack en este proyecto. Los admins puedes controlar: noticias, usuarios, sponsors, deudas y muchisimas otras características.',
+      'Trabajé como desarrollador full stack en este proyecto. Los admins puedes controlar: noticias, usuarios, sponsors, deudas y muchisimas otras características. La plataforma es completamente responsive. Entregamos una excelente app.',
     tags: [
       'React',
       'Nest.js',
@@ -241,8 +241,8 @@ export const projectsDataEsp: Project[] = [
   {
     title: 'Videogames - HENRY',
     description:
-      'Proyecto individual desarrollado por mi. Incluye petición de datos hacia RAWG(API), filtros y ordenamientos combinados, musica de fondo, y un formulario para crear tu propio juego.',
-    tags: ['React', 'PostgreSQL', 'Express', 'Node.js', 'Redux'],
+      'Proyecto individual desarrollado por mi. Incluye petición de datos hacia RAWG(API), filtros y ordenamientos combinados, musica de fondo, y un formulario para crear tu propio juego. También puedes ver el detalle de cada juego en la página. Incluye paginado y busqueda por nombre.',
+    tags: ['React', 'PostgreSQL', 'Express', 'Node.js', 'Redux', 'CSS'],
     imageUrl: PI,
     images: [
       'https://res.cloudinary.com/db7wpgkge/image/upload/v1696274239/portfolio-swiper/PI-project/cvvrsamdp8s24qodmvwr.png',

@@ -37,7 +37,7 @@ export default function Project({
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
   return (
     <motion.div ref={ref} className="group mb-3 sm:mb-8 last:mb-0 ">
-      {showMore ? (
+      {showMore && (
         <motion.div
           initial={{
             opacity: 0,
@@ -64,7 +64,7 @@ export default function Project({
             {language === 'ENG' ? 'Close' : 'Cerrar'}
           </button>
         </motion.div>
-      ) : null}
+      )}
 
       <section className="relative rounded-lg bg-gray-100 max-w-[42rem] borderBlack overflow-hidden sm:pr-8 sm:h-[25rem] hover:bg-gray-200 sm:group-even:pl-8 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-5 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] ">
