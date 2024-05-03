@@ -5,8 +5,10 @@ import { LuGraduationCap } from 'react-icons/lu';
 import ADIP from '@/public/ADIP-home-light.png';
 import PI from '@/public/landing.pi.png';
 import PROG from '@/public/aprender-programar-gratis.png';
+import ABM from '@/public/home abm.png';
 import { StaticImageData } from 'next/image';
 import OLIMPO from '@/public/foto olimpo.png';
+import FISIO from '@/public/fisio home.png';
 interface Project {
   title: string;
   description: string;
@@ -139,6 +141,38 @@ export const projectsData: Project[] = [
     ],
   },
   {
+    title: 'CRUD - Discounts Manager',
+    description:
+      'I carried out a technical test with PHP and Laravel for Ssr. The results were so good that I exceeded the interviewers expectations. Without knowing PHP, I demonstrated my innate capacity for self-taught learning in the development world.',
+    tags: ['PHP', 'Laravel', 'MySQL', 'Livewire', 'TailwindCSS'],
+    imageUrl: ABM,
+    images: [
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750955/portfolio-swiper/ABM/o1qs5klrh19e1xtgwike.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750955/portfolio-swiper/ABM/grapek2rueu0yww17erp.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750956/portfolio-swiper/ABM/nwjahfnffy5chgvyupyb.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750955/portfolio-swiper/ABM/lcqcnzjui1vr96rllei3.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750955/portfolio-swiper/ABM/lyb5fpm8tterqjkyay2h.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714751178/portfolio-swiper/ABM/szgaffr2gsem1vfjelio.png',
+    ],
+  },
+  {
+    title: 'Fisiom Fulness | HealthTech and Wellness',
+    description:
+      'I collaborated on this project as a Fullstack Dev. I was appointed as a leader and we managed to make impressive progress on it under the Scrum methodology. My main task was to develop the admin dashboard for the platform.',
+    tags: ['Next.js', 'MongoDB', 'Express.js', 'Mongoose', 'TailwindCSS'],
+    imageUrl: FISIO,
+    images: [
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714755149/portfolio-swiper/fisiomfulness/e9nxm5kkhqwhpogofgop.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714755149/portfolio-swiper/fisiomfulness/qobkljrclzfcp49hd2c3.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714755148/portfolio-swiper/fisiomfulness/a8ql2mlvvz1jlplyfc7b.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714755149/portfolio-swiper/fisiomfulness/udakvudikl7hdsxjwof6.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714755148/portfolio-swiper/fisiomfulness/oiglrhalewppspioa8cl.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714755149/portfolio-swiper/fisiomfulness/vsbt1eheguqeukcurwrb.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714755148/portfolio-swiper/fisiomfulness/shqeawhwbokmjameqvdg.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714755148/portfolio-swiper/fisiomfulness/eqoigr9tffqqovaz2zcg.png',
+    ],
+  },
+  {
     title: 'Coming soon...',
     description:
       'I am very excited to have the opportunity to showcase my talent, and I will keep working to achieve it, so you will see new projects here frequently :).',
@@ -218,6 +252,38 @@ export const projectsDataEsp: Project[] = [
     ],
   },
   {
+    title: 'ABM - Gestor de descuentos',
+    description:
+      'Realicé una prueba técnica con PHP y Laravel para Ssr. Los resultados fueron tan buenos que superé las expectativas de los entrevistadores. Sin conocer PHP, demostré mi capacidad innata de aprendizaje autodidacta en el mundo del desarrollo.',
+    tags: ['PHP', 'Laravel', 'MySQL', 'Livewire', 'TailwindCSS'],
+    imageUrl: ABM,
+    images: [
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750955/portfolio-swiper/ABM/o1qs5klrh19e1xtgwike.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750955/portfolio-swiper/ABM/grapek2rueu0yww17erp.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750956/portfolio-swiper/ABM/nwjahfnffy5chgvyupyb.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750955/portfolio-swiper/ABM/lcqcnzjui1vr96rllei3.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750955/portfolio-swiper/ABM/lyb5fpm8tterqjkyay2h.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714751178/portfolio-swiper/ABM/szgaffr2gsem1vfjelio.png',
+    ],
+  },
+  {
+    title: 'Fisiom Fulness | Salud y Bienestar',
+    description:
+      'Colaboré en este proyecto como Fullstack Dev. Fui designado como lider y logramos realizar avances impresionantes en el mismo bajo metodología Scrum. Mi tarea principal fue desarrollar el panel de administrador para la plataforma.',
+    tags: ['Next.js', 'MongoDB', 'Express.js', 'Mongoose', 'TailwindCSS'],
+    imageUrl: FISIO,
+    images: [
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714755149/portfolio-swiper/fisiomfulness/e9nxm5kkhqwhpogofgop.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714755149/portfolio-swiper/fisiomfulness/qobkljrclzfcp49hd2c3.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714755148/portfolio-swiper/fisiomfulness/a8ql2mlvvz1jlplyfc7b.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714755149/portfolio-swiper/fisiomfulness/udakvudikl7hdsxjwof6.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714755148/portfolio-swiper/fisiomfulness/oiglrhalewppspioa8cl.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714755149/portfolio-swiper/fisiomfulness/vsbt1eheguqeukcurwrb.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714755148/portfolio-swiper/fisiomfulness/shqeawhwbokmjameqvdg.png',
+      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714755148/portfolio-swiper/fisiomfulness/eqoigr9tffqqovaz2zcg.png',
+    ],
+  },
+  {
     title: 'Muy pronto...',
     description:
       'Estoy muy ansioso por tener la oportunidad de demostrar mi talento y seguiré trabajando para conseguirla, por lo tanto, verás nuevos proyectos aquí con frecuencia :).',
@@ -231,21 +297,26 @@ export const skillsData = [
   'CSS',
   'JavaScript',
   'TypeScript',
-  'React',
-  'Next.js',
+  'PHP',
   'Node.js',
   'Git',
-  'Redux',
+  'Laravel',
+  'Livewire',
   'Express',
+  'Nest.js',
+  'React',
+  'Next.js',
+  'Redux',
+  'MySQL',
+  'MongoDB',
+  'PostgreSQL',
   'Sequelize',
   'TypeORM',
-  'PostgreSQL',
-  'Nest.js',
+  'Sequelize',
+  'Mongoose',
   'Material UI',
-  'Framer Motion',
-  'React-Hot-Toast',
   'Next.UI',
-  'Resend/Email.js',
+  'Framer Motion',
 ] as const;
 export const experiencesData = [
   {
@@ -256,18 +327,25 @@ export const experiencesData = [
     date: 'JUN. 2023 | SEPT. 2023',
   },
   {
-    title: 'Full Stack Developer (intern)',
+    title: 'Full Stack Developer (Intern)',
     description:
-      'I am working as a full stack developer for 1 month to develop a SPA for Club ADIP, which is located in Buenos Aires.',
+      'I worked as a full stack developer for 1 month to develop a SPA for Club ADIP, which is located in Buenos Aires.',
     icon: React.createElement(CgWorkAlt),
     date: 'AUG. 2023 | SEPT. 2023',
   },
   {
     title: 'Full Stack Developer',
     description:
-      'I worked as a Fullstack developer to develop a SPA for Olimpo Training, in Mendoza.',
+      'I worked as a Fullstack developer to develop a SPA for Olimpo Training, in Mendoza. The SPA was entirely developed by me.',
     icon: React.createElement(CgWorkAlt),
     date: 'DEC. 2023 | FEB. 2024',
+  },
+  {
+    title: 'Full Stack Developer (Intern)',
+    description:
+      'I worked as a Fullstack developer at Fisiom Fulness, a HealthTech and Wellness Company located in Breña, Lima, Perú. I was designated as the team leader. We worked under the Scrum methodology and we managed to make impressive progress on the project.',
+    icon: React.createElement(CgWorkAlt),
+    date: 'APR. 2024 | MAY. 2024',
   },
   {
     title: 'Prompt & Responses Reviewer | Remotasks (Remote)',
@@ -279,7 +357,7 @@ export const experiencesData = [
   {
     title: 'Coming soon...',
     description:
-      "I'll keep getting experience by working as a freelancer and making personal projects.",
+      "I'll keep getting experience by working as a freelancer and making personal projects and internships.",
     icon: React.createElement(FaReact),
     date: 'Forever',
   },
@@ -294,7 +372,7 @@ export const experiencesDataEsp = [
     date: 'JUN. 2023 | SEPT. 2023',
   },
   {
-    title: 'Desarrollador Full Stack (pasante)',
+    title: 'Desarrollador Full Stack (Pasante)',
     description:
       'Trabajé como desarrollador full stack durante 1 mes para desarrollar una Aplicación de Página Única (SPA) para el Club ADIP, ubicado en Buenos Aires.',
     icon: React.createElement(CgWorkAlt),
@@ -306,6 +384,13 @@ export const experiencesDataEsp = [
       'Trabajé como desarrollador Fullstack para desarrollar una SPA para Olimpo Training, en Mendoza.',
     icon: React.createElement(CgWorkAlt),
     date: 'DIC. 2023 | FEB. 2024',
+  },
+  {
+    title: 'Full Stack Developer (Pasante)',
+    description:
+      'Trabajé como desarrollador Fullstack en Fisiom Fulness, una Empresa de Salud y Bienestar, ubicada en Breña, Lima, Perú. Fui designado como el lider del equipo. Trabajamos bajo la metodología Scrum y logramos realizar avances impresionantes en el proyecto.',
+    icon: React.createElement(CgWorkAlt),
+    date: 'ABR. 2024 | MAY. 2024',
   },
   {
     title: 'Prompt & Responses Reviewer | Remotasks (Remoto)',

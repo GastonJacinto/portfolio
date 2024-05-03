@@ -72,9 +72,12 @@ export default function Intro() {
           </>
         ) : (
           <>
-            <span className="font-bold">Hola! Soy Gastón.</span> Soy {' '}
-            <span className="font-bold">desarrollador full stack</span> y estoy buscando una <span className="font-bold">oportunidad</span> para demostrar mi talento. Disfruto estar programando{' '}
-            <span className="italic"> y me encantan </span>los nuevos desafíos. Actualmente me enfoco en{' '}
+            <span className="font-bold">Hola! Soy Gastón.</span> Soy{' '}
+            <span className="font-bold">desarrollador Fullstack</span> y estoy
+            buscando una <span className="font-bold">oportunidad</span> para
+            demostrar mi talento. Disfruto estar programando{' '}
+            <span className="italic"> y me encantan </span>los nuevos desafíos.
+            Actualmente me enfoco en{' '}
             <span className="underline">React (Next.js)</span>.
           </>
         )}
@@ -95,9 +98,17 @@ export default function Intro() {
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           href={'#contact'}
         >
-         {language==="ENG"?<> Contact me here{' '}
-          <BsArrowRight className="contactMe" /></>:<> Contáctame{' '}
-          <BsArrowRight className="contactMe" /></>}
+          {language === 'ENG' ? (
+            <>
+              {' '}
+              Contact me here <BsArrowRight className="contactMe" />
+            </>
+          ) : (
+            <>
+              {' '}
+              Contáctame <BsArrowRight className="contactMe" />
+            </>
+          )}
         </Link>
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2  rounded-full borderBlack focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 hover:text-gray-950  transition dark:bg-white/10 dark:text-white/60"
