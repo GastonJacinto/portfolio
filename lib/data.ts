@@ -75,7 +75,7 @@ export const projectsData: Project[] = [
   {
     title: 'Olimpo Training',
     description:
-      'Designed an all-encompassing gym application enabling users to manage credits via MercadoPago, book/cancel classes, edit profiles; admins oversee classes, plans, instructors, and user credits.',
+      'Designed an all-encompassing gym application enabling users to manage credits via MercadoPago, book/cancel classes, edit their profiles and see their past classes. Admins oversee classes, plans, instructors, and they also can manage users and their credits. The platform is completely responsive and fully functional.',
     tags: [
       'Next.js',
       'Nest.js',
@@ -104,7 +104,7 @@ export const projectsData: Project[] = [
   {
     title: 'Club ADIP',
     description:
-      'I worked as a full-stack developer on this project. Admins can post notices and control various features, including users, sponsors, debts, and many more.',
+      'I worked as a full-stack developer on this project. Admins can post notices and control various features, including users, sponsors, debts, notices, and more. The platform is fully responsive. We delivered an excellent app.',
     tags: [
       'React',
       'Nest.js',
@@ -130,8 +130,8 @@ export const projectsData: Project[] = [
   {
     title: 'Videogames - HENRY',
     description:
-      'Individual project developed by me. It includes fetching data from the RAWG API, combined filters and sorting options, background music, and a form to create your own game.',
-    tags: ['React', 'PostgreSQL', 'Express', 'Node.js', 'Redux'],
+      'Individual project developed by me. It includes fetching data from the RAWG API, combined filters and sorting options, background music, and a form to create your own game. You also can see every games detail in the page. It includes pagination and filter by name.',
+    tags: ['React', 'PostgreSQL', 'Express', 'Node.js', 'Redux', 'CSS'],
     imageUrl: PI,
     images: [
       'https://res.cloudinary.com/db7wpgkge/image/upload/v1696274239/portfolio-swiper/PI-project/cvvrsamdp8s24qodmvwr.png',
