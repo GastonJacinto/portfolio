@@ -26,55 +26,65 @@ export default function About() {
       {language === 'ENG' ? (
         <>
           <p className="mb-3">
-            From an early age, I demonstrated an incredible ability to learn. I
-            am excellent in mathematics and anything that requires analysis and
-            comprehension. My greatest asset is my mind and my strong ability to
-            communicate, as well as my knack for recognizing when I am wrong. I
-            have completed internships where I was appointed as a team leader
-            for developers, and together, we managed to achieve the expected
-            results, even surpassing expectations.
-            <br />
-            In the midst of my{' '}
-            <span className="font-medium">accountant career</span>, I made the
-            decision to pursue my passion for programming. I enrolled in Henry's
-            bootcamp and learned{' '}
-            <span className="font-medium">full-stack web development</span>.{' '}
-            <span className="italic">My favorite part of programming</span> is
-            the problem-solving aspect. I{' '}
-            <span className="underline">love</span> the feeling of finally
-            figuring out a solution to a problem. <br />I am always eager to
-            learn new technologies and am currently diving into PHP and Laravel.
-            I am actively seeking a{' '}
-            <span className="font-medium">full-time or part time position</span>{' '}
-            as a Fullstack developer.
+            From an early age, I demonstrated a strong ability to learn and
+            solve problems. Today, I apply that mindset as a{' '}
+            <span className="font-medium">Full-Stack Developer</span>{' '}
+            specialized in <span className="underline">React/Next.js</span>, AI
+            integrations, and{' '}
+            <span className="font-medium">cloud-based solutions</span>.
+            <br />I have hands-on experience implementing{' '}
+            <span className="font-medium">
+              AI-powered chat assistants
+            </span>, <span className="font-medium">LLMs</span>,{' '}
+            <span className="font-medium">RAG Models</span>, and{' '}
+            <span className="font-medium">Vector Databases</span>, enabling
+            smarter data-driven applications. I also work with{' '}
+            <span className="font-medium">Supabase/Edge Functions</span> and{' '}
+            <span className="font-medium">Node.js</span> for backend
+            development, and have deployed scalable features in{' '}
+            <span className="font-medium">cloud computing environments</span>{' '}
+            like Azure.
+            <br />I have led developer teams under{' '}
+            <span className="italic">Scrum methodology</span> and successfully
+            delivered projects that exceeded expectations. Currently, I am
+            pursuing a{' '}
+            <span className="font-medium">Technical Degree in Programming</span>{' '}
+            at UTN while working full-time, and I am interested in positions
+            such as{' '}
+            <span className="font-medium">Senior Full-Stack Developer</span> or{' '}
+            <span className="font-medium">AI Integration Engineer</span>.
           </p>
         </>
       ) : (
         <>
           <p className="mb-3">
-            Desde temprana edad, he demostrado una notable capacidad para
-            aprender. Destaco en matemáticas y en todo lo que requiere análisis
-            y comprensión. Mi mayor fortaleza es mi mente y mi alta habilidad
-            para comunicarme, así como mi capacidad para reconocer cuando me
-            equivoco. He realizado pasantías donde fui designado líder de equipo
-            de desarrolladores y logramos alcanzar los resultados esperados,
-            incluso superando las expectativas.
+            Desde temprana edad, he demostrado una gran capacidad para aprender
+            y resolver problemas. Hoy aplico esa mentalidad como{' '}
+            <span className="font-medium">Desarrollador Full-Stack</span>{' '}
+            especializado en <span className="underline">React/Next.js</span>,
+            integraciones con IA y{' '}
+            <span className="font-medium">soluciones en la nube</span>.
             <br />
-            En el medio de la carrera de{' '}
-            <span className="font-medium">contador público</span>, tomé la
-            decisión de perseguir mi pasión por la programación. Me inscribí en
-            el Bootcamp de Henry y aprendí{' '}
-            <span className="font-medium">desarrollo web Fullstack</span>.{' '}
-            <span className="italic">
-              Lo que más me gusta de la programación
-            </span>{' '}
-            es la parte de resolver problemas. Me{' '}
-            <span className="underline">encanta</span> como se siente cuando
-            finalmente encuentro la solución a un problema. <br /> Siempre estoy
-            ansioso por aprender nuevas tecnologías y actualmente estoy
-            estudiando PHP y Laravel. Estoy buscando un{' '}
-            <span className="font-medium">puesto full time o part time</span>{' '}
-            como desarrollador Fullstack.
+            Tengo experiencia práctica implementando{' '}
+            <span className="font-medium">
+              asistentes virtuales con IA
+            </span>, <span className="font-medium">LLMs</span>,{' '}
+            <span className="font-medium">RAG Models</span> y{' '}
+            <span className="font-medium">bases de datos vectoriales</span>,
+            logrando aplicaciones más inteligentes y basadas en datos. También
+            trabajo con{' '}
+            <span className="font-medium">Supabase/Edge Functions</span> y{' '}
+            <span className="font-medium">Node.js</span> para el backend, y he
+            desplegado funcionalidades escalables en entornos de{' '}
+            <span className="font-medium">cloud computing</span> como Azure.
+            <br />
+            He liderado equipos de desarrollo bajo la{' '}
+            <span className="italic">metodología Scrum</span>, logrando entregar
+            proyectos que superaron las expectativas. Actualmente curso la{' '}
+            <span className="font-medium">Tecnicatura en Programación</span> en
+            la UTN mientras trabajo full-time, y me interesan posiciones como{' '}
+            <span className="font-medium">Senior Full-Stack Developer</span> o{' '}
+            <span className="font-medium">AI Integration Engineer</span>.
           </p>
         </>
       )}

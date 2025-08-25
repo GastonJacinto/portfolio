@@ -347,7 +347,7 @@ export const projectsDataEsp: Project[] = [
       'Node.js',
     ],
     imageUrl: RSC,
-    linkTo: 'https://rentscape.vercel.app',
+    linkTo: 'http://rentscape.co/',
     images: [],
   },
   {
