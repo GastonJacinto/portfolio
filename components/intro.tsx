@@ -64,12 +64,11 @@ export default function Intro() {
         {language === 'ENG' ? (
           <>
             <span className="font-bold">Hey! I'm Gastón.</span> I'm a{' '}
-            <span className="font-bold">Full-Stack Developer</span> specialized
-            in <span className="underline">React/Next.js</span>, AI
-            integrations, and backend development with{' '}
-            <span className="font-bold">Supabase/Edge Functions</span>.
-            Proficient in <span className="font-bold">Node.js</span> and
-            experienced with{' '}
+            <span className="font-bold">Software Engineer</span> specialized in{' '}
+            <span className="underline">React/Next.js</span>, AI integrations,{' '}
+            <span className="font-bold">Supabase/Edge Functions</span> and{' '}
+            <strong>cloud-based</strong> solutions. Proficient in{' '}
+            <span className="font-bold">Next.js</span> and experienced with{' '}
             <span className="italic">
               cloud computing (Azure, Azure Data Factory)
             </span>
@@ -77,19 +76,19 @@ export default function Intro() {
             <span className="font-bold">Technical Degree in Programming</span>{' '}
             at UTN while working full-time. Interested in roles such as{' '}
             <span className="font-bold">
-              Senior Full-Stack Developer, Software Engineer
+              Senior Software Engineer, Software Engineer
             </span>
-            , or <span className="font-bold">AI Integration Engineer</span>.
+            or <span className="font-bold">AI Integration Engineer</span>.
           </>
         ) : (
           <>
             <span className="font-bold">Hola! Soy Gastón.</span> Soy{' '}
-            <span className="font-bold">Desarrollador Full-Stack</span>{' '}
+            <span className="font-bold">Ingeniero de Software</span>{' '}
             especializado en <span className="underline">React/Next.js</span>,
-            integraciones con IA y desarrollo backend con{' '}
-            <span className="font-bold">Supabase/Edge Functions</span>. Manejo
-            con solidez <span className="font-bold">Node.js</span> y tengo
-            experiencia en{' '}
+            integraciones con IA,{' '}
+            <span className="font-bold">Supabase/Edge Functions</span> y
+            soluciones <strong>basadas en la nube</strong>. Dominio sólido de{' '}
+            <span className="font-bold">Next.js</span> y experiencia en{' '}
             <span className="italic">
               cloud computing (Azure, Azure Data Factory)
             </span>
@@ -97,7 +96,7 @@ export default function Intro() {
             <span className="font-bold">Tecnicatura en Programación</span> en la
             UTN mientras trabajo full-time. Me interesan roles como{' '}
             <span className="font-bold">
-              Senior Full-Stack Developer, Software Engineer
+              Senior Software Engineer, Software Engineer
             </span>{' '}
             o <span className="font-bold">AI Integration Engineer</span>.
           </>

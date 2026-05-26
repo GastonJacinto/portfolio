@@ -3,14 +3,14 @@ import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
 import ADIP from '@/public/ADIP-home-light.png';
-import PI from '@/public/landing.pi.png';
 import PROG from '@/public/aprender-programar-gratis.png';
-import ABM from '@/public/home abm.png';
 import { StaticImageData } from 'next/image';
-import OLIMPO from '@/public/foto olimpo.png';
 import FISIO from '@/public/fisio home.png';
 import RSC from '@/public/RSC.png';
-import PLACEHOLDER from '@/public/placeholder-1.jpeg';
+import OLIMPO_LANDING from '@/public/olimpo-landing.png';
+import ADF from '@/public/adf2.png';
+import PORTAL from '@/public/portal.png';
+
 interface Project {
   title: string;
   description: string;
@@ -75,38 +75,9 @@ export const linksESP = [
 
 export const projectsData: Project[] = [
   {
-    title: 'Olimpo Training',
-    description:
-      'Designed an all-encompassing gym application enabling users to manage credits via MercadoPago, book/cancel classes, edit their profiles and see their past classes. Admins oversee classes, plans, instructors, and they also can manage users and their credits. The platform is completely responsive and fully functional.',
-    tags: [
-      'Next.js',
-      'Nest.js',
-      'PostgreSQL',
-      'TypeScript',
-      'FramerMotion',
-      'React-hot-toast',
-      'Next.UI',
-    ],
-    imageUrl: OLIMPO,
-    linkTo: 'https://evolution-client.vercel.app',
-    images: [
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572387/portfolio-swiper/olimpo-training/ly0vfefjykaf1mlxzrlz.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572692/portfolio-swiper/olimpo-training/qxwbdrxbiwb0x1387lli.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572693/portfolio-swiper/olimpo-training/kd0tjiqjhzygtof7uhwp.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572283/portfolio-swiper/olimpo-training/fcxpehx1291id9nbsgfe.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572283/portfolio-swiper/olimpo-training/kpygbprqektm5s4nllip.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572283/portfolio-swiper/olimpo-training/yxrokwrp0cv1veo10gq9.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572283/portfolio-swiper/olimpo-training/bmnotht4sqdup4mqkrum.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572284/portfolio-swiper/olimpo-training/nh5uhwzy6wk3sxzkffuv.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572284/portfolio-swiper/olimpo-training/pd4acvhisilbptblcqbb.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572283/portfolio-swiper/olimpo-training/wjtx16oty9lqegkuci55.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572283/portfolio-swiper/olimpo-training/bmnotht4sqdup4mqkrum.png',
-    ],
-  },
-  {
     title: 'Club ADIP',
     description:
-      'I worked as a full-stack developer on this project. Admins can post notices and control various features, including users, sponsors, debts, notices, and more. The platform is fully responsive. We delivered an excellent app.',
+      'One of the first real-life projects I worked on. Designed a fully-functional dashboard for admins to post notices and control various features, including users, sponsors, debts, notices and more. The platform is fully responsive.',
     tags: [
       'React',
       'Nest.js',
@@ -129,38 +100,23 @@ export const projectsData: Project[] = [
       'https://res.cloudinary.com/db7wpgkge/image/upload/v1696265154/portfolio-swiper/ADIP-project/dashboard/titrzctk94id2jupa9ff.png',
     ],
   },
-  {
-    title: 'Videogames - HENRY',
-    description:
-      'Individual project developed by me. It includes fetching data from the RAWG API, combined filters and sorting options, background music, and a form to create your own game. You also can see every games detail in the page. It includes pagination and filter by name.',
-    tags: ['React', 'PostgreSQL', 'Express', 'Node.js', 'Redux', 'CSS'],
-    imageUrl: PI,
-    images: [
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1696274239/portfolio-swiper/PI-project/cvvrsamdp8s24qodmvwr.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1696274239/portfolio-swiper/PI-project/ubby4smyiepkfha6krgl.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1696274239/portfolio-swiper/PI-project/khjlyhxeuowirv53x8hc.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1696274239/portfolio-swiper/PI-project/yj3zbaobygnxzzfloqlh.png',
-    ],
-  },
-  {
-    title: 'CRUD - Discounts Manager',
-    description:
-      'I carried out a technical test with PHP and Laravel for Ssr. The results were so good that I exceeded the interviewers expectations. Without knowing PHP, I demonstrated my innate capacity for self-taught learning in the development world.',
-    tags: ['PHP', 'Laravel', 'MySQL', 'Livewire', 'TailwindCSS'],
-    imageUrl: ABM,
-    images: [
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750955/portfolio-swiper/ABM/o1qs5klrh19e1xtgwike.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750955/portfolio-swiper/ABM/grapek2rueu0yww17erp.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750956/portfolio-swiper/ABM/nwjahfnffy5chgvyupyb.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750955/portfolio-swiper/ABM/lcqcnzjui1vr96rllei3.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750955/portfolio-swiper/ABM/lyb5fpm8tterqjkyay2h.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714751178/portfolio-swiper/ABM/szgaffr2gsem1vfjelio.png',
-    ],
-  },
+  // {
+  //   title: 'Videogames - HENRY',
+  //   description:
+  //     'It includes fetching data from the RAWG API, combined filters and sorting options, background music, and a form to create your own game. You also can see every games detail in the page. It includes pagination and filter by name.',
+  //   tags: ['React', 'PostgreSQL', 'Express', 'Node.js', 'Redux', 'CSS'],
+  //   imageUrl: PI,
+  //   images: [
+  //     'https://res.cloudinary.com/db7wpgkge/image/upload/v1696274239/portfolio-swiper/PI-project/cvvrsamdp8s24qodmvwr.png',
+  //     'https://res.cloudinary.com/db7wpgkge/image/upload/v1696274239/portfolio-swiper/PI-project/ubby4smyiepkfha6krgl.png',
+  //     'https://res.cloudinary.com/db7wpgkge/image/upload/v1696274239/portfolio-swiper/PI-project/khjlyhxeuowirv53x8hc.png',
+  //     'https://res.cloudinary.com/db7wpgkge/image/upload/v1696274239/portfolio-swiper/PI-project/yj3zbaobygnxzzfloqlh.png',
+  //   ],
+  // },
   {
     title: 'Fisiom Fulness | HealthTech and Wellness',
     description:
-      'I collaborated on this project as a Fullstack Dev. I was appointed as a leader and we managed to make impressive progress on it under the Scrum methodology. My main task was to develop the admin dashboard for the platform.',
+      'Worked as full-stack tech lead under the Scrum methodology. I was in charge of developing the admin dashboard for the platform.',
     tags: ['Next.js', 'MongoDB', 'Express.js', 'Mongoose', 'TailwindCSS'],
     imageUrl: FISIO,
     images: [
@@ -174,28 +130,11 @@ export const projectsData: Project[] = [
       'https://res.cloudinary.com/db7wpgkge/image/upload/v1714755148/portfolio-swiper/fisiomfulness/eqoigr9tffqqovaz2zcg.png',
     ],
   },
-  {
-    title: 'Spark&Co',
-    description:
-      'Developed an application to manage client projects. Built an AI assistant integrated with Jira tickets using OpenAI LLMs and Pinecone. Clients can view and interact with project data without accessing Jira directly.',
-    tags: [
-      'Next.js',
-      'React',
-      'TypeScript',
-      'Supabase',
-      'Edge Functions',
-      'OpenAI LLMs',
-      'Vector Databases',
-      'AI Integrations',
-    ],
-    imageUrl: PLACEHOLDER,
-    linkTo: '',
-    images: [],
-  },
+
   {
     title: 'RentScape',
     description:
-      'Develop and maintain RentScape, a real estate leasing platform. Implemented AI-powered chat assistant using OpenAI LLMs and Pinecone, property application management, digital lease signing, and scheduling system. Built with Next.js/React frontend and Supabase with Edge Functions backend.',
+      'Real estate leasing platform. Implemented AI-powered chat assistant using OpenAI LLMs and Pinecone, property application management, digital lease signing, and scheduling system. Built with Next.js/React and Supabase with Edge Functions.',
     tags: [
       'Next.js',
       'React',
@@ -212,18 +151,52 @@ export const projectsData: Project[] = [
     images: [],
   },
   {
-    title: 'Barrel Replacement (Azure)',
+    title: 'Spark&Co',
     description:
-      'Develop and maintain multiple data pipelines to validate, decrypt, and transform various files (.csv, .json, .pgp) from multiple clients using Azure and cloud storage. Integrated RESTful endpoints for frontend access to processed data.',
-    tags: ['Azure', 'Azure Data Factory', 'Node.js', 'Data Pipelines'],
-    imageUrl: PLACEHOLDER,
+      'Portal to manage client projects. Integrated an AI-powered assistant fed with Jira tickets using OpenAI LLMs and Pinecone. Clients can view and interact with project data without accessing Jira directly.',
+    tags: [
+      'Next.js',
+      'TypeScript',
+      'Supabase',
+      'Jira API',
+      'Edge Functions',
+      'OpenAI LLMs',
+      'Vector Databases',
+      'AI Integrations',
+    ],
+    imageUrl: PORTAL,
+    linkTo: 'https://buildwithspark.co/',
+    images: [],
+  },
+  {
+    title: 'Azure Data Factory',
+    description:
+      'Develop and maintain multiple data pipelines in Azure Data Factory to validate, decrypt and transform massive amounts of data from multiple benefit administrators in United States. Implement Service Bus for queueing and processing data, Cosmos DB for storing and querying data, and Data Lake Storage for storing raw data.',
+    tags: ['Service Bus', 'Azure Data Factory', 'Node.js', 'Cloud Engineering'],
+    imageUrl: ADF,
     linkTo: '',
+    images: [],
+  },
+  {
+    title: 'Olimpo - Fitness Management',
+    description:
+      'A SaaS focused on fitness center management. It allows owners to have complete control over their gyms, classes, schedules, plans, clients, AI-powered training plans, and QR code check-in. Clients also have their own user dashboard with metrics and data on their subscriptions and training plans. It features both mobile and desktop applications.',
+    tags: [
+      'Next.js',
+      'Supabase',
+      'TypeScript',
+      'Framer Motion',
+      'Shadcn',
+      'OpenAI',
+    ],
+    imageUrl: OLIMPO_LANDING,
+    linkTo: 'https://olimpo.lat',
     images: [],
   },
   {
     title: 'Coming soon...',
     description:
-      'I am very excited to have the opportunity to showcase my talent, and I will keep working to achieve it, so you will see new projects here frequently :).',
+      "Today, I am better than what I was yesterday. It doesn't matter when you read this! I am always working on new projects to keep improving and learning, so you will see new projects here frequently :).",
     tags: ['I', 'will', 'never', 'stop', 'learning', 'and', 'coding'],
     imageUrl: PROG,
     images: [],
@@ -231,38 +204,9 @@ export const projectsData: Project[] = [
 ];
 export const projectsDataEsp: Project[] = [
   {
-    title: 'Olimpo Training',
-    description:
-      'Desarrollé una aplicación integral para un gimnasio, permitiendo a usuarios recargar créditos con MercadoPago, reservar/quitar clases, editar perfiles y a administradores gestionar clases, planes, instructores también pueden administrar usuarios y sus créditos. La aplicación es completamente responsive y funcional.',
-    tags: [
-      'Next.js',
-      'Nest.js',
-      'PostgreSQL',
-      'TypeScript',
-      'FramerMotion',
-      'Next.UI',
-      'React-hot-toast',
-    ],
-    imageUrl: OLIMPO,
-    linkTo: 'https://evolution-client.vercel.app',
-    images: [
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572387/portfolio-swiper/olimpo-training/ly0vfefjykaf1mlxzrlz.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572692/portfolio-swiper/olimpo-training/qxwbdrxbiwb0x1387lli.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572693/portfolio-swiper/olimpo-training/kd0tjiqjhzygtof7uhwp.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572283/portfolio-swiper/olimpo-training/fcxpehx1291id9nbsgfe.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572283/portfolio-swiper/olimpo-training/kpygbprqektm5s4nllip.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572283/portfolio-swiper/olimpo-training/yxrokwrp0cv1veo10gq9.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572283/portfolio-swiper/olimpo-training/bmnotht4sqdup4mqkrum.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572284/portfolio-swiper/olimpo-training/nh5uhwzy6wk3sxzkffuv.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572284/portfolio-swiper/olimpo-training/pd4acvhisilbptblcqbb.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572283/portfolio-swiper/olimpo-training/wjtx16oty9lqegkuci55.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1700572283/portfolio-swiper/olimpo-training/bmnotht4sqdup4mqkrum.png',
-    ],
-  },
-  {
     title: 'Club ADIP',
     description:
-      'Trabajé como desarrollador full stack en este proyecto. Los admins puedes controlar: noticias, usuarios, sponsors, deudas y muchisimas otras características. La plataforma es completamente responsive. Entregamos una excelente app.',
+      'Uno de los primeros proyectos reales en los que trabajé. Diseñé un dashboard completamente funcional para administradores, con control de avisos, usuarios, sponsors, deudas y muchas otras características. La plataforma es completamente responsive.',
     tags: [
       'React',
       'Nest.js',
@@ -273,7 +217,6 @@ export const projectsDataEsp: Project[] = [
     ],
     imageUrl: ADIP,
     linkTo: 'https://front-deploy-adipweb.onrender.com',
-
     images: [
       'https://res.cloudinary.com/db7wpgkge/image/upload/v1696264987/portfolio-swiper/ADIP-project/home/ioo5ny2bm3eih0ixe7tk.png',
       'https://res.cloudinary.com/db7wpgkge/image/upload/v1696264798/portfolio-swiper/ADIP-project/home/ohtvbopxi9q29onswe61.png',
@@ -287,37 +230,9 @@ export const projectsDataEsp: Project[] = [
     ],
   },
   {
-    title: 'Videogames - HENRY',
+    title: 'Fisiom Fulness | HealthTech y Bienestar',
     description:
-      'Proyecto individual desarrollado por mi. Incluye petición de datos hacia RAWG(API), filtros y ordenamientos combinados, musica de fondo, y un formulario para crear tu propio juego. También puedes ver el detalle de cada juego en la página. Incluye paginado y busqueda por nombre.',
-    tags: ['React', 'PostgreSQL', 'Express', 'Node.js', 'Redux', 'CSS'],
-    imageUrl: PI,
-    images: [
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1696274239/portfolio-swiper/PI-project/cvvrsamdp8s24qodmvwr.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1696274239/portfolio-swiper/PI-project/ubby4smyiepkfha6krgl.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1696274239/portfolio-swiper/PI-project/khjlyhxeuowirv53x8hc.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1696274239/portfolio-swiper/PI-project/yj3zbaobygnxzzfloqlh.png',
-    ],
-  },
-  {
-    title: 'ABM - Gestor de descuentos',
-    description:
-      'Realicé una prueba técnica con PHP y Laravel para Ssr. Los resultados fueron tan buenos que superé las expectativas de los entrevistadores. Sin conocer PHP, demostré mi capacidad innata de aprendizaje autodidacta en el mundo del desarrollo.',
-    tags: ['PHP', 'Laravel', 'MySQL', 'Livewire', 'TailwindCSS'],
-    imageUrl: ABM,
-    images: [
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750955/portfolio-swiper/ABM/o1qs5klrh19e1xtgwike.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750955/portfolio-swiper/ABM/grapek2rueu0yww17erp.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750956/portfolio-swiper/ABM/nwjahfnffy5chgvyupyb.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750955/portfolio-swiper/ABM/lcqcnzjui1vr96rllei3.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714750955/portfolio-swiper/ABM/lyb5fpm8tterqjkyay2h.png',
-      'https://res.cloudinary.com/db7wpgkge/image/upload/v1714751178/portfolio-swiper/ABM/szgaffr2gsem1vfjelio.png',
-    ],
-  },
-  {
-    title: 'Fisiom Fulness | Salud y Bienestar',
-    description:
-      'Colaboré en este proyecto como Fullstack Dev. Fui designado como lider y logramos realizar avances impresionantes en el mismo bajo metodología Scrum. Mi tarea principal fue desarrollar el panel de administrador para la plataforma.',
+      'Trabajé como Tech Lead Full-Stack bajo metodología Scrum. Estuve a cargo del desarrollo del panel de administrador de la plataforma.',
     tags: ['Next.js', 'MongoDB', 'Express.js', 'Mongoose', 'TailwindCSS'],
     imageUrl: FISIO,
     images: [
@@ -334,7 +249,7 @@ export const projectsDataEsp: Project[] = [
   {
     title: 'RentScape',
     description:
-      'Desarrollo y mantenimiento de RentScape, una plataforma de alquiler de inmuebles. Incluye asistente de chat con IA usando OpenAI LLMs y Pinecone, gestión de aplicaciones de propiedades, firma digital de contratos y sistema de agendamiento. Frontend en Next.js/React y backend en Supabase con Edge Functions.',
+      'Plataforma de alquiler de inmuebles. Implementé un asistente de chat con IA usando OpenAI LLMs y Pinecone, gestión de solicitudes de propiedades, firma digital de contratos y sistema de agendamiento. Desarrollado con Next.js/React y Supabase con Edge Functions.',
     tags: [
       'Next.js',
       'React',
@@ -351,36 +266,52 @@ export const projectsDataEsp: Project[] = [
     images: [],
   },
   {
-    title: 'Barrel Replacement (Azure)',
-    description:
-      'Desarrollo y mantenimiento de pipelines de datos para validar, descifrar y transformar archivos (.csv, .json, .pgp) de múltiples clientes usando Azure. Se integraron endpoints REST para que el frontend acceda a los datos procesados.',
-    tags: ['Azure', 'Azure Data Factory', 'Node.js', 'Data Pipelines'],
-    imageUrl: PLACEHOLDER,
-    linkTo: '',
-    images: [],
-  },
-  {
     title: 'Spark&Co',
     description:
-      'Aplicación para gestión de proyectos de clientes. Implementé un asistente de IA integrado con tickets de Jira usando OpenAI LLMs y Pinecone. Los clientes pueden consultar y manipular datos sin acceder directamente a Jira.',
+      'Portal para gestionar proyectos de clientes. Integré un asistente de IA alimentado con tickets de Jira usando OpenAI LLMs y Pinecone. Los clientes pueden ver e interactuar con los datos del proyecto sin acceder a Jira directamente.',
     tags: [
       'Next.js',
-      'React',
       'TypeScript',
       'Supabase',
+      'Jira API',
       'Edge Functions',
       'OpenAI LLMs',
       'Vector Databases',
       'AI Integrations',
     ],
-    imageUrl: PLACEHOLDER,
+    imageUrl: PORTAL,
+    linkTo: 'https://buildwithspark.co/',
+    images: [],
+  },
+  {
+    title: 'Azure Data Factory',
+    description:
+      'Desarrollo y mantenimiento de múltiples pipelines de datos en Azure Data Factory para validar, descifrar y transformar grandes volúmenes de datos de múltiples administradores de beneficios en Estados Unidos. Implementé Service Bus para encolado y procesamiento, Cosmos DB para almacenamiento y consulta, y Data Lake Storage para datos crudos.',
+    tags: ['Service Bus', 'Azure Data Factory', 'Node.js', 'Cloud Engineering'],
+    imageUrl: ADF,
     linkTo: '',
+    images: [],
+  },
+  {
+    title: 'Olimpo - Gestión Fitness',
+    description:
+      'SaaS enfocado en la gestión de centros de fitness. Permite a los propietarios tener control total sobre sus gimnasios, clases, horarios, planes, clientes, planes de entrenamiento con IA y check-in por QR. Los clientes también cuentan con su propio panel de usuario con métricas y datos de sus suscripciones y planes. Disponible en versión móvil y escritorio.',
+    tags: [
+      'Next.js',
+      'Supabase',
+      'TypeScript',
+      'Framer Motion',
+      'Shadcn',
+      'OpenAI',
+    ],
+    imageUrl: OLIMPO_LANDING,
+    linkTo: 'https://olimpo.lat',
     images: [],
   },
   {
     title: 'Muy pronto...',
     description:
-      'Estoy muy ansioso por tener la oportunidad de demostrar mi talento y seguiré trabajando para conseguirla, por lo tanto, verás nuevos proyectos aquí con frecuencia :).',
+      'Hoy soy mejor que ayer. ¡No importa cuándo leas esto! Siempre estoy trabajando en nuevos proyectos para seguir mejorando y aprendiendo, así que verás proyectos nuevos aquí con frecuencia :).',
     tags: ['Jamás', 'dejaré', 'de', 'aprender', 'y', 'programar'],
     imageUrl: PROG,
     images: [],
@@ -436,13 +367,13 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
     date: 'AUG. 2023 | SEPT. 2023',
   },
-  {
-    title: 'Full Stack Developer | Olimpo Training',
-    description:
-      'Developed a SPA entirely by myself for Olimpo Training in Mendoza.',
-    icon: React.createElement(CgWorkAlt),
-    date: 'DEC. 2023 | FEB. 2024',
-  },
+  // {
+  //   title: 'Full Stack Developer | Olimpo Training',
+  //   description:
+  //     'Developed a SPA entirely by myself for Olimpo Training in Mendoza.',
+  //   icon: React.createElement(CgWorkAlt),
+  //   date: 'DEC. 2023 | FEB. 2024',
+  // },
   {
     title: 'AI Trainer | Remotasks (Remote)',
     description:
@@ -453,16 +384,23 @@ export const experiencesData = [
   {
     title: 'Full Stack Tech Lead | Fisiom Fulness',
     description:
-      'Worked as a Tech Lead at Fisiom Fulness, a HealthTech and Wellness Company in Breña, Lima, Peru. Led the team under Scrum methodology, supervising the development of the product until completion.',
+      'Worked as a Tech Lead at Fisiom Fulness, a HealthTech and Wellness Company in Breña, Lima, Peru. Led the team under Scrum methodology, supervising the development of the product.',
     icon: React.createElement(CgWorkAlt),
     date: 'FEB. 2024 | MAY. 2024',
   },
   {
-    title: 'Full-Stack & Cloud Developer | Spark & Co',
+    title: 'Full-Stack & Cloud Engineer | Spark & Co',
     description:
-      'Working as a Full-Stack Developer, building and maintaining a real estate leasing platform with Next.js/React, Supabase, and Edge Functions. Developed OpenAI LLM models for an AI-powered chat assistant. Also developing Azure pipelines using Data Factory, Cosmos DB, Data Lake Storage, and Service Bus for multiple US Benefits Administrators.',
+      'Working as a Full-Stack & Cloud Engineer, building and maintaining a real estate leasing platform with Next.js/React, Supabase, and Edge Functions. Developed OpenAI LLM models for an AI-powered chat assistant. Also developing Azure pipelines using Data Factory, Cosmos DB, Data Lake Storage, and Service Bus for multiple US Benefits Administrators.',
     icon: React.createElement(CgWorkAlt),
     date: 'MAY. 2024 | PRESENT',
+  },
+  {
+    title: 'Software Engineer & Founder | Olimpo',
+    description:
+      'Founded Olimpo, a SaaS focused on fitness center management. It allows owners to have complete control over their gyms, classes, schedules, plans, clients, AI-powered training plans, and QR code check-in. Clients also have their own user dashboard with metrics and data on their subscriptions and training plans. It features both mobile and desktop applications.',
+    icon: React.createElement(CgWorkAlt),
+    date: 'SEPT. 2025 | PRESENT',
   },
   {
     title: 'Present',
@@ -488,38 +426,38 @@ export const experiencesDataEsp = [
     date: 'AGO. 2023 | SEPT. 2023',
   },
   {
-    title: 'Desarrollador Full Stack | Olimpo Training',
-    description:
-      'Desarrollé una SPA completamente por mi cuenta para Olimpo Training en Mendoza.',
-    icon: React.createElement(CgWorkAlt),
-    date: 'DIC. 2023 | FEB. 2024',
-  },
-  {
     title: 'AI Trainer | Remotasks (Remoto)',
     description:
-      'Trabajé como desarrollador Full-Stack encargado de entrenar ChatBots de IA utilizando prompts parametrizados y evaluando las respuestas del modelo.',
+      'Trabajé como Desarrollador Full-Stack encargado de entrenar ChatBots de IA utilizando prompts parametrizados y evaluando las respuestas del modelo.',
     icon: React.createElement(CgWorkAlt),
     date: 'DIC. 2023 | FEB. 2024',
   },
   {
     title: 'Full Stack Tech Lead | Fisiom Fulness',
     description:
-      'Trabajé como Tech Lead en Fisiom Fulness, una empresa de HealthTech y Wellness ubicada en Breña, Lima, Perú. Lideré al equipo bajo metodología Scrum, supervisando el desarrollo del producto hasta su finalización.',
+      'Trabajé como Tech Lead en Fisiom Fulness, una empresa de HealthTech y Wellness en Breña, Lima, Perú. Lideré al equipo bajo metodología Scrum, supervisando el desarrollo del producto.',
     icon: React.createElement(CgWorkAlt),
     date: 'FEB. 2024 | MAY. 2024',
   },
   {
     title: 'Desarrollador Full-Stack & Cloud | Spark & Co',
     description:
-      'Trabajo desarrollando y manteniendo una plataforma de alquiler de propiedades con Next.js/React, Supabase y Edge Functions. Desarrollé modelos OpenAI LLM para un asistente de chat impulsado por IA. También desarrollo pipelines en Azure usando Data Factory, Cosmos DB, Data Lake Storage y Service Bus para múltiples Benefits Administrators en EE. UU.',
+      'Trabajo desarrollando y manteniendo una plataforma de alquiler de propiedades con Next.js/React, Supabase y Edge Functions. Desarrollé modelos OpenAI LLM para un asistente de chat con IA. También desarrollo pipelines en Azure usando Data Factory, Cosmos DB, Data Lake Storage y Service Bus para múltiples Benefits Administrators en EE. UU.',
     icon: React.createElement(CgWorkAlt),
     date: 'MAY. 2024 | ACTUALIDAD',
   },
   {
-    title: 'Presente',
+    title: 'Ingeniero de Software & Fundador | Olimpo',
+    description:
+      'Fundé Olimpo, un SaaS enfocado en la gestión de centros de fitness. Permite a los propietarios tener control total sobre sus gimnasios, clases, horarios, planes, clientes, planes de entrenamiento con IA y check-in por QR. Los clientes también cuentan con su propio panel con métricas y datos de sus suscripciones. Disponible en móvil y escritorio.',
+    icon: React.createElement(CgWorkAlt),
+    date: 'SEPT. 2025 | ACTUALIDAD',
+  },
+  {
+    title: 'Actualidad',
     description:
       'Siempre dispuesto a seguir aprendiendo y creciendo profesionalmente.',
     icon: React.createElement(FaReact),
-    date: 'Indefinido',
+    date: 'Por siempre',
   },
 ] as const;

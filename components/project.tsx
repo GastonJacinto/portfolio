@@ -66,7 +66,7 @@ export default function Project({
         </motion.div>
       )}
 
-      <section className="relative rounded-lg bg-gray-100 max-w-[42rem] borderBlack overflow-hidden sm:pr-8 sm:h-[25rem] hover:bg-gray-200 sm:group-even:pl-8 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+      <section className="relative rounded-lg bg-gray-100 max-w-[42rem] borderBlack overflow-hidden sm:pr-8   hover:bg-gray-200 sm:group-even:pl-8 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-5 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] ">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-sm text-gray-700 dark:text-white/70">
@@ -98,9 +98,9 @@ export default function Project({
           <Link href={linkTo} target="_blank">
             <button
               onClick={() => {}}
-              className="absolute left-0 group-even:left-[initial] group-even:right-0 text-sm p-1  bg-zinc-700 text-white sm:p-2 sm:text-lg rounded-full border border-black bottom-0 md:flex flex items-center justify-center gap-2 dark:bg-zinc-200 dark:text-black transition-all dark:border-white"
+              className="absolute left-1 bottom-1  group-even:left-[initial] group-even:right-1 p-1 bg-zinc-700 text-white sm:p-2 rounded-full border border-black md:flex flex items-center justify-center gap-2 dark:bg-zinc-200 dark:text-black transition-all dark:border-white hover:scale-110 active:scale-105"
             >
-              <FaExternalLinkAlt />
+              <FaExternalLinkAlt className="size-2" />
             </button>
           </Link>
         )}

@@ -28,8 +28,8 @@ export default function About() {
           <p className="mb-3">
             From an early age, I demonstrated a strong ability to learn and
             solve problems. Today, I apply that mindset as a{' '}
-            <span className="font-medium">Full-Stack Developer</span>{' '}
-            specialized in <span className="underline">React/Next.js</span>, AI
+            <span className="font-medium">Software Engineer</span> specialized
+            in <span className="underline">React/Next.js</span>, AI
             integrations, and{' '}
             <span className="font-medium">cloud-based solutions</span>.
             <br />I have hands-on experience implementing{' '}
@@ -51,8 +51,9 @@ export default function About() {
             <span className="font-medium">Technical Degree in Programming</span>{' '}
             at UTN while working full-time, and I am interested in positions
             such as{' '}
-            <span className="font-medium">Senior Full-Stack Developer</span> or{' '}
-            <span className="font-medium">AI Integration Engineer</span>.
+            <span className="font-medium">Senior Software Engineer</span>,{' '}
+            <span className="font-medium"> AI Integration Engineer</span> or{' '}
+            <span className="font-medium">Cloud Engineer</span>.
           </p>
         </>
       ) : (
@@ -60,7 +61,7 @@ export default function About() {
           <p className="mb-3">
             Desde temprana edad, he demostrado una gran capacidad para aprender
             y resolver problemas. Hoy aplico esa mentalidad como{' '}
-            <span className="font-medium">Desarrollador Full-Stack</span>{' '}
+            <span className="font-medium">Ingeniero de Software</span>{' '}
             especializado en <span className="underline">React/Next.js</span>,
             integraciones con IA y{' '}
             <span className="font-medium">soluciones en la nube</span>.
@@ -83,8 +84,9 @@ export default function About() {
             proyectos que superaron las expectativas. Actualmente curso la{' '}
             <span className="font-medium">Tecnicatura en Programación</span> en
             la UTN mientras trabajo full-time, y me interesan posiciones como{' '}
-            <span className="font-medium">Senior Full-Stack Developer</span> o{' '}
-            <span className="font-medium">AI Integration Engineer</span>.
+            <span className="font-medium">Senior Software Engineer</span>,{' '}
+            <span className="font-medium">AI Integration Engineer</span> o{' '}
+            <span className="font-medium">Cloud Engineer</span>.
           </p>
         </>
       )}
